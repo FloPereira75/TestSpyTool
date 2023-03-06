@@ -11,6 +11,7 @@ body {
     line-height: initial !important;
 }
 
+/* DEBUT HEADER */
 
 header {
     background: linear-gradient(29.46deg, #9E65D3 0%, #6E65D3 100%);
@@ -33,14 +34,14 @@ header nav {
 }
 
 #mobile_nav_content {
-    margin-top: 20px;
     background: #fff;
+    margin-top: 20px;
 }
 
 .nav-link {
     color: #9E65D3 !important;
-    font-weight: 700 !important;
     font-size: 18px;
+    font-weight: 700 !important;
 }
 
 .shadow nav ul {
@@ -54,28 +55,28 @@ header .nav-desktop {
 header h1 {
     font-size: 42px;
     font-weight: 900;
-    line-height: 43px;
     margin: 110px 5px 30px;
+    line-height: 43px;
 }
 
 .header_txt {
     font-size: 16px;
     font-weight: 300;
-    line-height: 20px;
     margin: 0 15px 85px;
+    line-height: 20px;
 }
 
 .phone-number-input {
-    height: 63px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 63px;
+    background: rgba(255, 255, 255, 0.1);
     margin: 0 5px;
     padding: 9px 8px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 10px 14px rgb(0 0 0 / 7%);
     border: 1px solid #FFFFFF;
     border-radius: 50px;
+    box-shadow: 0px 10px 14px rgb(0 0 0 / 7%);
 }
 
 .country-selector {
@@ -97,18 +98,18 @@ header h1 {
 }
 
 .country-indicator-number {
-    font-size: 21px;
     font-family: 'Inter' !important;
     color: #FFFFFF;
+    font-size: 21px;
     font-weight: 400;
 }
 
 .phone-number-input input {
     width: 50%;
     height: 100%;
-    font-size: 21px;
     font-family: 'Inter' !important;
     color: #fff;
+    font-size: 21px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -118,31 +119,37 @@ header h1 {
 }
 
 .send-btn {
-    height: 45px;
-    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 45px;
+    width: 45px;
     background: #fff;
     border-radius: 50%;
     cursor: pointer;
 }
 
+/* FIN HEADER */
+
+/* DEBUT MAIN */
+
 main {
     width: 100%;
 }
 
+/* DEBUT SERVICE CLIENT */
+
 .service-client {
-    background: #FFFFFF;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-align: initial;
     gap: 15px;
+    background: #FFFFFF;
     margin: 45px 20px;
     padding: 15px;
-    box-shadow: 0px 4px 9px rgb(0 0 0 / 10%);
+    text-align: initial;
     border-radius: 75px;
+    box-shadow: 0px 4px 9px rgb(0 0 0 / 10%);
 }
 
 header .service-client {
@@ -154,22 +161,26 @@ header .service-client {
 }
 
 .service-client_infos_title {
-    font-size: 13px;
     color: #9E65D3;
+    font-size: 13px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
 .service-client_infos p:nth-child(2) {
-    font-size: 13px;
     color: rgba(40, 26, 88, 1);
+    font-size: 13px;
 }
 
 .service-client_infos_number {
-    font-size: 32px;
     color: rgba(40, 26, 88, 1);
+    font-size: 32px;
 }
+
+/* FIN SERVICE CLIENT */
+
+/* DEBUT APP DESCRIPTION DIV */
 
 .app-description-div {
     margin: 0 10px 0 20px;
@@ -186,8 +197,8 @@ header .service-client {
 }
 
 .app-description-div_head h2 {
-    font-size: 30px;
     color: #281A58;
+    font-size: 30px;
     font-weight: 500;
     line-height: 35px;
 }
@@ -223,16 +234,16 @@ header .service-client {
     background: #FFFFFF;
     margin-bottom: 30px;
     padding: 30px 30px 35px;
-    box-shadow: 0px 4px 9px rgb(0 0 0 / 10%);
     border-radius: 10px;
+    box-shadow: 0px 4px 9px rgb(0 0 0 / 10%);
 }
 
 .app-description-div_features_box_icon {
-    width: 81.13px;
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 81.13px;
+    height: 80px;
     margin-bottom: 30px;
     border-radius: 15px;
 }
@@ -249,8 +260,8 @@ header .service-client {
 .app-description-div_features_box_title {
     font-size: 19px;
     font-weight: 800;
-    line-height: 33px;
     margin-bottom: 6px;
+    line-height: 33px;
 }
 .purple_title {
     color: #9E65D3;
@@ -263,8 +274,8 @@ header .service-client {
 }
 
 .app-description-div_features_box_content {
-    font-size: 15px;
     color: #6C647B;
+    font-size: 15px;
     line-height: 19px;
 }
 
@@ -275,10 +286,10 @@ header .service-client {
 }
 
 .slider-dots span {
+    display: block;
     width: 9px;
     height: 9px;
     background: #D9D9D9;
-    display: block;
     margin-bottom: 57px;
     border-radius: 76px;
 }
@@ -287,7 +298,9 @@ header .service-client {
     background: #01A19F;
 }
 
+/* FIN APP DESCRIPTION DIV */
 
+/* DEBUT APP SUB-PAY-INFOS */
 
 .sub-pay-infos {
     position: relative;
@@ -296,13 +309,13 @@ header .service-client {
 }
 
 .sub-pay-infos_txt {
-    width: 100%;
-    height: 395px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 395px;
+    margin-bottom: 75px;
     gap: 30px;
     overflow-y: overlay;
-    margin-bottom: 75px;
 }
 
 /* RETIRE LA BARRE DE SCROLL */
@@ -319,8 +332,8 @@ header .service-client {
 }
 
 .sub-pay-infos_txt_title {
-    font-size: 30px;
     color: #FFFFFF;
+    font-size: 30px;
     font-weight: 500;
     line-height: 33px;
     margin-bottom: 15px;
@@ -350,23 +363,21 @@ header .service-client {
     display: none;
 }
 
+/* FIN APP SUB-PAY-INFOS */
 
+/* DEBUT SERVICE-PRICE */
 
 .service-price {
     margin: 80px 20px;
 }
 
-.service-price_head {
-
-}
-
 .service-price_head h2 {
-    font-size: 30px;
     color: #281A58;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
-    line-height: 35px;
     text-align: center;
+    line-height: 35px;
 }
 
 .service-price_head p {
@@ -389,16 +400,16 @@ header .service-client {
 }
 
 .price {
-    font-size: 60px;
     color: #9E65D3;
+    font-size: 60px;
     font-weight: 800;
     margin-bottom: 15px;
     line-height: 40px;
 }
 
 .service-price_start_abo_head p:last-child {
-    font-size: 18px;
     color: #281A58;
+    font-size: 18px;
     margin: 0 15px;
     line-height: 25px;
 }
@@ -406,7 +417,6 @@ header .service-client {
 .service-price_start_abo_head p:last-child span {
     font-weight: 800;
 }
-
 
 .service-price_start_abo_list {
     display: flex;
@@ -426,11 +436,11 @@ header .service-client {
 }
 
 .service-price_start_abo_btn {
-    width: 100%;
-    height: 53px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 53px;
     background: #01A19F;
     color: #fff;
     font-weight: 700;
@@ -439,7 +449,6 @@ header .service-client {
     padding: 10px 20px;
     border-radius: 8px;
 }
-
 
 .service-price_logo_illustration {
     position: relative;
@@ -451,14 +460,12 @@ header .service-client {
 }
 
 .service-price_logo_illustration p {
-    font-size: 21px;
     color: rgba(255, 255, 255, 0.59);
+    font-size: 21px;
     font-weight: 300;
     margin-top: 20px;
     margin-bottom: 0;
 }
-
-
 
 .service-price_logo_illustration_bckg {
     display: flex;
@@ -474,6 +481,9 @@ header .service-client {
     display: none;
 }
 
+/* FIN SERVICE-PRICE */
+
+/* DEBUT YOUR QUESTIONS */
 
 .your-questions {
     width: 100%;
@@ -502,47 +512,39 @@ header .service-client {
     margin-bottom: 0;
 }
 
-.your-questions_faq {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 60px;
+.your-questions .accordion {
+    max-width: 709px;
+    margin: 0 auto 60px;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-active-color: #281A58;
+    --bs-accordion-active-bg: transparent !important;
+    --bs-accordion-btn-focus-box-shadow: none;
 }
 
-.your-questions_faq_box {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    padding: 10px 10px 14px;
-    border-bottom: 1px solid rgba(40, 26, 88, 0.2);
-    cursor: pointer;
-}
-
-.toggle-icon {
-    height: 22px;
-    display: flex;
-    align-items: center;
-}
-
-.your-questions_faq_box_content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.your-questions_faq_box_content_header {
-    font-size: 20px;
-    color: #281A58;
-    font-weight: 500;
-    line-height: 26px;
-    margin: 0;
-}
-
-.your-questions_faq_box_content_txt {
+.your-questions .accordion-item {
     color: #6C647B;
     line-height: 20px;
-    margin: 0;
+    border-bottom: 1px solid rgba(40, 26, 88, 0.2);
+}
+
+.your-questions .accordion-button {
+    color: #281A58;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: baseline;
+}
+
+.your-questions .accordion-button::after {
+    order: -1;
+    margin-left: 0;
+    margin-right: 0.5em;
+}
+
+.your-questions .accordion-body {
+    margin-left: 2em;
+    padding-top: 0;
 }
 
 .your-questions_btn {
@@ -558,6 +560,11 @@ header .service-client {
     border-radius: 8px;
 }
 
+/* FIN YOUR QUESTIONS */
+
+/* FIN MAIN */
+
+/* DEBUT FOOTER */
 
 footer {
     width: 100%;
@@ -585,6 +592,8 @@ footer p {
 footer p span {
     display: none;
 }
+
+/* FIN FOOTER */
 
 /* SMALL DESKTOP DESIGN */
 
@@ -662,10 +671,6 @@ footer p span {
         line-height: 83px;
         margin: 162px auto 28px;
     }
-
-    /* header h1 .br-formobile:first-child {
-        display: none;
-    } */
 
     .header_txt {
         width: 476px;
@@ -990,16 +995,9 @@ footer p span {
         font-size: 20px;
         line-height: 31px;
     }
-
-    .your-questions_faq {
-        align-items: center;
-        max-width: 709px;
-        margin: 0 auto 60px;
-        gap: 6px;
-    }
-
-    .your-questions_faq_box_content_header .br-formobile {
-        display: none;
+    
+    .your-questions .accordion-button {
+        line-height: 31px;
     }
 
     .your-questions_btn {

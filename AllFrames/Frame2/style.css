@@ -28,6 +28,25 @@ header nav {
     margin-bottom: 50px;
 }
 
+.hamburger-menu {
+    padding: 0;
+}
+
+#mobile_nav_content {
+    background: #fff;
+    margin-top: 20px;
+}
+
+.nav-link {
+    color: #9E65D3 !important;
+    font-size: 18px;
+    font-weight: 700 !important;
+}
+
+.shadow nav ul {
+    gap: 10px;
+}
+
 header .nav-desktop {
     display: none;
 }
@@ -61,6 +80,7 @@ header .nav-desktop {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 14px;
+    margin: 0;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -69,6 +89,7 @@ header .nav-desktop {
     font-family: 'Inter';
     font-size: 26px;
     margin-top: 5px;
+    margin-bottom: 0;
 }
 
 .map_localisation_point {
