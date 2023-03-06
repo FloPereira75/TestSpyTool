@@ -608,7 +608,7 @@ footer p span {
         left: 0;
         top: 2.5%;
         width: 40%;
-        height: 65%;
+        height: 50%;
         background-image: url(assets/bckg2.svg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -617,11 +617,11 @@ footer p span {
     header::after {
         content: "";
         position: absolute;
-        height: 55%;
-        width: 29%;
+        height: 50%;
+        width: 26%;
         right: 0;
         bottom: 0;
-        background-image: url(assets/bckg1.svg);
+        background-image: url(assets/img-handspytool-right.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1039,27 +1039,13 @@ footer p span {
 
 @media (min-width: 1400px) {
     header::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 2.5%;
         width: 33%;
         height: 65%;
-        background-image: url(assets/bckg2.svg);
-        background-repeat: no-repeat;
     }
 
     header::after {
-        content: "";
-        position: absolute;
         height: 83%;
         width: 28%;
-        right: 0;
-        bottom: 0;
-        background-image: url(assets/bckg1.svg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 0 0 80px 0;
     }
 
     header h1 .br-formobile:first-child {
