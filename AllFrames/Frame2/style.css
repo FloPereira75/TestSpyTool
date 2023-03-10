@@ -37,6 +37,10 @@ header nav {
     margin-top: 20px;
 }
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .nav-link {
     color: #9E65D3 !important;
     font-size: 18px;
@@ -63,12 +67,12 @@ header .nav-desktop {
     top: 0;
 }
 
-.map_localisation_number {
+.header_map_localisation_number {
     background: linear-gradient(180deg, #9E65D3 0%, #6E65D3 100%);
     width: 315px;
     height: 85px;
     color: #fff;
-    margin-top: 142px;
+    margin: 20px auto;
     padding: 16px 40px;
     text-align: center;
     border-radius: 50px;
@@ -76,7 +80,7 @@ header .nav-desktop {
     z-index: 20;
 }
 
-.map_localisation_number p:first-child {
+.header_map_localisation_number p:first-child {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 14px;
@@ -85,11 +89,14 @@ header .nav-desktop {
     text-transform: uppercase;
 }
 
-.map_localisation_number p:last-child {
+.header_map_localisation_number p:last-child {
     font-family: 'Inter';
     font-size: 26px;
-    margin-top: 5px;
     margin-bottom: 0;
+}
+
+.map_localisation_number {
+    display: none;
 }
 
 .map_localisation_point {
@@ -146,6 +153,10 @@ header .nav-desktop {
         height: 29px;
     }
 
+    .header_map_localisation_number {
+        display: none;
+    }
+
     .map {
         position: relative;
         display: flex;
@@ -161,6 +172,7 @@ header .nav-desktop {
     }
 
     .map_localisation_number {
+        display: block;
         background: linear-gradient(180deg, #9E65D3 0%, #6E65D3 100%);
         width: 315px;
         height: 85px;
@@ -176,6 +188,7 @@ header .nav-desktop {
         font-family: 'Inter';
         font-weight: 500;
         font-size: 14px;
+        margin: 0;
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
@@ -183,7 +196,7 @@ header .nav-desktop {
     .map_localisation_number p:last-child {
         font-family: 'Inter';
         font-size: 26px;
-        margin-top: 5px;
+        margin: 0;
     }
 
     .map_localisation_point {
