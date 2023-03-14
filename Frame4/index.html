@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpyTool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="pop-up">
+            <div class="pop-up_head">
+                <div class="pop-up_head_box">
+                    <p>Localisation</p>
+                    <p class="number">+33 6 95 80 34 34</p>
+                </div>
+                <img src="assets/icon_close.svg" alt="icon close" class="close-icon-mobile">
+                <img src="assets/close-icon-desktop.svg" alt="icon close" class="close-icon-desktop">
+            </div>
+            <div class="pop-up_body">
+                <div class="pop-up_body_head">
+                    <h1>Paiement</h1>
+                    <div class="price">
+                        <p>O.50€</p>
+                        <p>pendant 24h</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="input-grp">
+                        <input type="text" name="card-number" id="card-number" placeholder="1234 1234 1234 1234 ">
+                        <span class="card-grp"><img src="assets/card-grp.svg" alt="cb card"></span>
+                    </div>
+                    <div class="input-grp date-cvc">
+                        <input type="text" placeholder="MM/YY">
+                        <input type="text" placeholder="CVC">
+                        <span class="card-grp"><img src="assets/cvccard.svg" alt="cvc card"></span>
+                    </div>
+                    <div class="input-grp">
+                        <select name="country" id="country-select">
+                            <option value="France">France</option>
+                            <option value="France">Etats-Unis</option>
+                            <option value="France">Angleterre</option>
+                            <option value="France">Espagne</option>
+                            <option value="France">Allemagne</option>
+                            <option value="France">Italie</option>
+                        </select>
+                    </div>
+                    <a href="../Frame2/index.html" class="pop-up_btn">Afficher la géolocalisation →</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
