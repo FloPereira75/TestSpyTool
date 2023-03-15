@@ -866,7 +866,7 @@ footer p span {
     .sub-pay-infos_txt {
         width: 35.25%;
         height: auto;
-        max-height: 828px;
+        max-height: 600px;
         margin-bottom: 0;
         gap: 45px;
     }
@@ -900,6 +900,7 @@ footer p span {
         width: initial;
         top: initial;
         bottom: 0;
+	height: -webkit-fill-available;
     }
 
     .service-price {
@@ -1073,6 +1074,10 @@ footer p span {
     }
     .sub-pay-infos {
         padding: 9.75% 0;
+    }
+
+    .sub-pay-infos_background img {
+	height: auto;
     }
     .service-price {
         margin: 170px 20%;
