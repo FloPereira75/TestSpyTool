@@ -625,6 +625,18 @@ footer p span {
 
 /* FIN FOOTER */
 
+/* TABLET */
+
+@media (min-width: 750px) and (max-width: 1023px) {
+    .service-price_logo_illustration_bckg img {
+        width: auto;
+        height: 70%;
+    }
+}
+
+
+/* END TABLET */
+
 /* SMALL DESKTOP DESIGN */
 
 @media (min-width: 1024px) {
@@ -905,7 +917,7 @@ footer p span {
         width: initial;
         top: initial;
         bottom: 0;
-	height: -webkit-fill-available;
+	    height: -webkit-fill-available;
     }
 
     .service-price {
@@ -925,7 +937,7 @@ footer p span {
 
     .service-price_box {
         width: 100%;
-        max-height: 533px;
+        /* max-height: 533px; */
         display: flex;
         margin-top: 82px;
     }
@@ -1056,18 +1068,16 @@ footer p span {
 
 /* LARGE DESKTOP DESIGN */
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
     header::before {
-        width: 35%;
+        width: 25%;
         height: 70%;
         top: 5%;
-        background-size: auto;
     }
 
     header::after {
         height: 70%;
-        width: 30%;
-        background-position: right;
+        background-position: right bottom;
     }
 
     header h1 .br-formobile:first-child {
