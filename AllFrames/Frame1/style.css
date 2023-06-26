@@ -161,6 +161,10 @@ header h1 {
     cursor: pointer;
 }
 
+header .service-client {
+    visibility: hidden;
+}
+
 /* FIN HEADER */
 
 /* DEBUT MAIN */
@@ -398,121 +402,138 @@ header .service-client {
 
 /* FIN APP SUB-PAY-INFOS */
 
-/* DEBUT SERVICE-PRICE */
+/* DEBUT TEMOIGNAGES */
 
-.service-price {
-    margin: 80px 20px;
+.temoignages {
+    margin: 7.5% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.service-price_head h2 {
+.temoignages_head {
+    width: 100%;
+}
+
+.temoignages_head_txt h2 {
     color: #281A58;
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-align: center;
-    line-height: 35px;
-}
-
-.service-price_head p {
-    color: #6C647B;
-    margin: 0 30px;
-    line-height: 23px;
-    text-align: center;
-}
-
-.service-price_start_abo {
-    background: #E0E7F5;
-    margin-top: 50px;
-    padding: 55px 20px;
-    border-radius: 20px 20px 0 0;
-}
-
-.service-price_start_abo_head {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.price {
-    color: #9E65D3;
-    font-size: 60px;
-    font-weight: 800;
-    margin-bottom: 15px;
+    font-size: 40px;
     line-height: 40px;
 }
 
-.service-price_start_abo_head p:last-child {
-    color: #281A58;
-    font-size: 18px;
-    margin: 0 15px;
-    line-height: 25px;
+.temoignages_head_txt p {
+    color: #6C647B;
+    font-size: 16px;
+    line-height: 31px;
 }
 
-.service-price_start_abo_head p:last-child span {
-    font-weight: 800;
-}
-
-.service-price_start_abo_list {
+.temoignages_head_action {
     display: flex;
-    flex-direction: column;
     gap: 20px;
-    margin: 0 10px;
 }
 
-.service-price_start_abo_list p {
-    color: rgba(108, 100, 123, 1);
-    margin: 0;
-}
-
-.service-price_start_abo_list p span {
-    color: #01A49C;
-    font-weight: 900;
-}
-
-.service-price_start_abo_btn {
+.temoignages_head_action_btn {
+    width: 63px;
+    height: 63px;
+    border-radius: 63px;
+    background: #E0E7F5;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.temoignages_head_action_btn:hover {
+    background: #8165D3;
+}
+
+.temoignages_head_action_btn:hover svg path {
+    stroke: white;
+}
+
+.temoignages_box {
     width: 100%;
-    height: 53px;
-    background: #01A19F;
-    color: #fff;
+    display: -webkit-inline-box;
+    gap: 20px;
+    overflow-x: overlay;
+}
+/* RETIRE LA BARRE DE SCROLL */
+.temoignages_box::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.temoignages_box_card {
+    width: auto;
+    height: 277px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #E1E1E1;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.temoignages_box_card_head {
+
+}
+
+.temoignages_box_card_head_title {
+    color: #281A58;
+    font-size: 20px;
     font-weight: 700;
-    margin-top: 30px;
+    line-height: 22px;
+}
+
+.temoignages_box_card_head_txt {
+    color: #6C647B;
+    line-height: 22px;
+}
+
+.temoignages_box_card_user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.temoignages_box_card_user_photo {
+    width: 51px;
+    height: 51px;
+    border-radius: 51px;
+    border: 2px solid #FFF;
+}
+.temoignages_box_card_user_photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.temoignages_box_card_user_name-rating {
+
+}
+
+.temoignages_userName {
+    color: #281A58;
+    font-size: 18px;
+    font-weight: 700;
     margin-bottom: 0;
-    padding: 10px 20px;
-    border-radius: 8px;
 }
 
-.service-price_logo_illustration {
-    position: relative;
-    height: 417px;
-    background: linear-gradient(44.1deg, #01A49C 0%, #0095AA 100%);
-    padding: 40px 30px 0;
-    text-align: center;
-    border-radius: 0px 0px 20px 20px;
-}
-
-.service-price_logo_illustration p {
-    color: rgba(255, 255, 255, 0.59);
-    font-size: 21px;
-    font-weight: 300;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-.service-price_logo_illustration_bckg {
+.temoignages_btn {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+    background: #01A19F;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-weight: 700;
+    line-height: 33px;
+    border-radius: 38px;
+    cursor: pointer;
 }
 
-.service-price_logo_illustration_bckg img {
-    width: 100%;
-    height: 70%;
-    position: absolute;
-    bottom: 0;
-}
 
-/* FIN SERVICE-PRICE */
+/* FIN TEMOIGNAGES */
 
 /* DEBUT YOUR QUESTIONS */
 
@@ -588,7 +609,7 @@ header .service-client {
     margin: 0 25px;
     padding: 10px 20px;
     line-height: 33px;
-    border-radius: 8px;
+    border-radius: 38px;
 }
 
 /* FIN YOUR QUESTIONS */
@@ -629,10 +650,7 @@ footer p span {
 /* TABLET */
 
 @media (min-width: 750px) and (max-width: 1023px) {
-    .service-price_logo_illustration_bckg img {
-        width: auto;
-        height: 70%;
-    }
+    
 }
 
 
@@ -841,9 +859,10 @@ footer p span {
         overflow-x: initial;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2,1fr);
+        /* grid-template-rows: repeat(2,1fr); */
         margin-top: 0;
-        gap: 20px;
+        row-gap: 0;
+        column-gap: 20px;
     }
 
     .app-description-div_features_box {
@@ -851,20 +870,16 @@ footer p span {
         margin-bottom: 0;
     }
     .app-description-div_features_box:nth-child(1) {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    .app-description-div_features_box:nth-child(2) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
-    .app-description-div_features_box:nth-child(3) {
+    .app-description-div_features_box:nth-child(2) {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
     }
-    .app-description-div_features_box:nth-child(4) {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
+    .app-description-div_features_box:nth-child(3) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
 
     .slider-dots {
@@ -921,93 +936,134 @@ footer p span {
 	    height: -webkit-fill-available;
     }
 
-    .service-price {
+    .temoignages {
         margin: 7.5% 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 77px;
     }
 
-    .service-price_head h2 {
+    .temoignages_head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .temoignages_head_txt h2 {
+        color: #281A58;
         font-size: 47px;
         line-height: 40px;
-        margin-bottom: 22px;
     }
 
-    .service-price_head p {
+    .temoignages_head_txt p {
+        color: #6C647B;
         font-size: 20px;
         line-height: 31px;
     }
 
-    .service-price_box {
-        width: 100%;
-        /* max-height: 533px; */
+    .temoignages_head_action {
         display: flex;
-        margin-top: 82px;
+        gap: 20px;
     }
 
-    .service-price_start_abo {
-        margin-top: 0;
-        width: 57.51%;
-        border-radius: 20px 0 0 20px;
-        height: auto;
-        padding: 64px 6%;
+    .temoignages_head_action_btn {
+        width: 63px;
+        height: 63px;
+        border-radius: 63px;
+        background: #E0E7F5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .service-price_start_abo_head {
-        margin-bottom: 24px;
-        text-align: start;
+    .temoignages_head_action_btn:hover {
+        background: #8165D3;
     }
 
-    .price {
-        font-size: 70px;
-        margin-bottom: 14px;
+    .temoignages_head_action_btn:hover svg path {
+        stroke: white;
     }
 
-    .service-price_start_abo_head p:last-child {
-        font-size: 24px;
-        line-height: 40px;
-        margin: 0;
+    .temoignages_box {
+        display: flex;
+        gap: 20px;
     }
 
-    .service-price_start_abo_head p .br-formobile {
-        display: none;
-    }
-
-    .service-price_start_abo_list {
-        margin: 0 10px 10px 20px;
-        gap: 15px;
-    }
-
-    .service-price_start_abo_list p {
-        font-size: 20px;
-    }
-
-    .service-price_start_abo_btn {
-        width: 271px;
-        cursor: pointer;
-    }
-
-    .service-price_logo_illustration {
+    .temoignages_box_card {
+        width: 345px;
+        height: 277px;
+        padding: 30px 20px;
+        border-radius: 10px;
+        border: 1px solid #E1E1E1;
+        background: #FFF;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .temoignages_box_card_head {
+
+    }
+
+    .temoignages_box_card_head_title {
+        color: #281A58;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .temoignages_box_card_head_txt {
+        color: #6C647B;
+        line-height: 22px;
+    }
+
+    .temoignages_box_card_user {
+        display: flex;
+        gap: 10px;
         align-items: center;
-        width: 42.49%;
-        border-radius: 0 20px 20px 0;
-        height: auto;
-        padding: 64px 4.67% 0;
     }
 
-    .service-price_logo_illustration .logo {
-        width: 163px;
-        height: 25.77px;
+    .temoignages_box_card_user_photo {
+        width: 51px;
+        height: 51px;
+        border-radius: 51px;
+        border: 2px solid #FFF;
+    }
+    .temoignages_box_card_user_photo img {
+        width: 100%;
+        border-radius: 50%;
     }
 
-    .service-price_logo_illustration p {
-        font-size: 26px;
+    .temoignages_box_card_user_name-rating {
+
     }
 
-    .service-price_logo_illustration_bckg img {
-        width: auto;
-        height: auto;
+    .temoignages_userName {
+        color: #281A58;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0;
     }
+
+    .temoignages_btn {
+        width: 271px;
+        height: 53px;
+        margin: 0 auto;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #01A19F;
+        color: #FFFFFF;
+        font-weight: 700;
+        padding: 10px 20px;
+        line-height: 33px;
+        border-radius: 38px;
+    }
+
+
 
     .your-questions {
         padding: 100px 20px;
@@ -1094,9 +1150,9 @@ footer p span {
     }
 
     .sub-pay-infos_background img {
-	height: auto;
+	    height: auto;
     }
-    .service-price {
-        margin: 170px 20%;
+    .temoignages {
+        margin: 9% 12%;
     }
 }
